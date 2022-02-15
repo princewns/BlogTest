@@ -1,0 +1,41 @@
+header{
+    margin: 0;
+    width: 100%;
+    background-color: lightcoral;
+    padding: 20px;
+}
+h3, header{
+    text-align: center;
+}
+.nav_list > ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: gray;
+    text-shadow: 1px 1px 2px lightgrey;
+    font-weight: bold;
+}
+.blog{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+}
+.blog_item, .notice{
+    background-color: beige;
+    height: 300px;
+}
+@media screen and (max-width : 600px) {
+    .blog{
+        display: grid;
+        grid-template-columns: repeat(1,4fr);
+    }
+}
+.notice{
+    border: solid 1px black;
+}
